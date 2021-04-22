@@ -1,0 +1,58 @@
+* , *::before,*::after{
+    margin: 0px;
+    border:0px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.main-container{
+    background: linear-gradient(to right,#0F2027,#203A43,#2C5364);
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(130px , auto) repeat(5 , 100px);
+}
+
+
+.main-container > button {
+     font-size: 30px;
+     border:1px solid white;
+     cursor: pointer;
+     outline: none;
+     background-color: lightslategray;
+     opacity: 0.8;
+}
+
+.main-container > button:hover{
+     background-color:lightslategray;
+     opacity: 1;
+}
+.box-2{
+    grid-column: span 2;
+}
+
+.solution{
+    grid-column: 1/-1;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid white;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.current-sol  {
+    color: white;
+    font-size: 50px;
+}
+
+.previous-sol {
+    color: white;
+    opacity: 0.7;
+    font-size: 30px;
+}
